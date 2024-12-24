@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .home,
+  .order,
+  .success {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header nav {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    padding: 15px;
+  }
+}

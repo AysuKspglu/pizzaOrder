@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #FAF7F2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #CE2829;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+button {
+  background-color: #FDC913;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 10;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #5F5F5F;
+  cursor: not-allowed;
+}
+
+input,
+textarea {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #5F5F5F;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}

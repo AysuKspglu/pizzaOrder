@@ -1,0 +1,86 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #CE2829;
+}
+
+.home {
+    font-family: 'Barlow', sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 60px);
+    /* Assuming navbar height is 60px */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    padding-top: 19vh;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('C:\Users\user\Desktop\PizzaOrder\teknolojik-yemekler\src\assets\img\home-banner.png');
+    /* Replace with dynamic image if needed */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Ensure the image stays behind the text */
+    opacity: 1;
+    /* Adjust if transparency is needed */
+}
+
+.home h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15 rem;
+    /* Adjust size as needed */
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+    /* Adjust spacing between lines */
+    white-space: pre-line;
+    /* Ensure text breaks into new lines */
+}
+
+.button {
+    background-color: #FDC913;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 16px;
+    color: #292929;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #FDC913;
+    color: #292929;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    .home h2 {
+        font-size: 4rem;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
